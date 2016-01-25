@@ -150,8 +150,8 @@ EXAMPLE: example plot; shows an example
               + string(i) + ".";
       ERROR(err_mes);
     }
-  
-  system("sh", "command rm " + l);
+  i = system("sh", "command rm " + l);
+  return(l+".jpg");
 }
 example
 { "EXAMPLE:"; echo = 2;
